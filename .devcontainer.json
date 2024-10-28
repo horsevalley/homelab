@@ -1,0 +1,13 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "username": "devpod"
+    }
+  },
+  "remoteUser": "devpod",
+  "updateRemoteUserUID": true,
+  "postStartCommand": "sudo apt-get update && sudo apt-get install -y neovim"
+}

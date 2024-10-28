@@ -1,0 +1,7 @@
+provider: kubernetes
+options:
+  buildArch: linux/amd64
+  machine: linux/amd64
+  targetArch: amd64
+  username: devpod
+  ide: none
