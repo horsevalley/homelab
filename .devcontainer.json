@@ -4,6 +4,8 @@
     "ghcr.io/devcontainers/features/common-utils:2": {
       "installZsh": true,
       "configureZshAsDefaultShell": true,
+      "installOhMyZsh": false,
+      "upgradePackages": true,
       "username": "devpod"
     }
   },

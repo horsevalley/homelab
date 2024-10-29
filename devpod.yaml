@@ -4,4 +4,4 @@ options:
   machine: linux/amd64
   targetArch: amd64
   username: devpod
-  ide: none
+  KUBERNETES_NAMESPACE: devpod
