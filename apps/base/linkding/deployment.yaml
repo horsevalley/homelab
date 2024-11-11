@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: linkding
-  namespace: linkding
 spec:
   replicas: 1
   selector:
@@ -19,9 +18,9 @@ spec:
           ports:
             - containerPort: 9090
           volumeMounts:
-            - mountPath: /app/data
+            - mountPath: /etc/linkding/data
               name: linkding-data-pvc
       volumes:
-      - name: linkding-data-pvc
-        persistentVolumeClaim:
-          claimName: linkding-data-pvc
+        - name: linkding-data
+          persistentVolumeClaim:
+            claimName: linkding-data-pvc
