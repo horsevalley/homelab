@@ -4,6 +4,9 @@ metadata:
   name: linkding
 spec:
   replicas: 1
+  securityContext:
+    runAsUser: 33
+    allowPrivilegeEscalation: false
   selector:
     matchLabels:
       app: linkding
